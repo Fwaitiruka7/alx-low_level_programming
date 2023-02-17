@@ -22,9 +22,9 @@ int main(void)
 
 	/* your code goes there */
 
-	if (y > 5)
+	if (y > 5 && y != 5)
 	{
-		printf("The last digit of %d is %d greater than 5\n", n, y);
+		printf("Last digit of %d is %d greater than 5\n", n, y);
 	}
 	else if (y == 0)
 	{
