@@ -10,12 +10,12 @@
 
 int main(void)
 {
-       	char PP1;
-	
+	char PP1;
+
 	/* for loop to create lowercase alphabests */
 	for (PP1 = 'a'; PP1 <= 'z'; PP1++)
 	{
-		if ( PP1 != 'q' && PP1 != 'e')
+		if (PP1 != 'q' && PP1 != 'e')
 			putchar (PP1);
 	}
 	putchar ('\n');
