@@ -10,8 +10,7 @@
 
 int main(void)
 {
-	int number_x;
-	
+	int number_x;	
 	/* for loop statement for  single digit increment */
 
 	for (number_x = 0; number_x < 10; number_x++)
