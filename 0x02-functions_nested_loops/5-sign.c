@@ -2,10 +2,11 @@
 /**
  * print_sign - prints the sign of the number
  *
- * @n: is the integer to be used
+ * @n: is the number used to give the signs
  *
- * Return 1 if n > zero, 0 if n == zero and -1 if n < zero
- *
+ * Return: 1 and prints + if n is greater than zero
+ *	0 and prints 0 if n is zero
+ *	-1 and prints - if n is less than zero
  */
 int print_sign(int n)
 {
