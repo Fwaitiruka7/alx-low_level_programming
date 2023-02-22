@@ -10,4 +10,6 @@
 | [`3-islower.c`](https://github.com/Fwaitiruka7/alx-low_level_programming/blob/master/0x02-functions_nested_loops/3-islower.c) | Write a function that checks for lowercase character |
 | [`4-isalpha.c`](https://github.com/Fwaitiruka7/alx-low_level_programming/blob/master/0x02-functions_nested_loops/4-isalpha.c) | Write a function that checks for alphabetic character. Prototype: `int _isalpha(int c)`; `Returns 1` if c is a letter, lowercase or uppercase, and `Returns 0` otherwise |
 | [`5-sign.c`](https://github.com/Fwaitiruka7/alx-low_level_programming/blob/master/0x02-functions_nested_loops/5-sign.c) | Write a function that prints the sign of a number. Prototype: `int print_sign(int n)`; Returns `1` and prints `+` if n is greater than zero, Returns `0` and prints `0` if n is zero, Returns `-1` and prints `-` if n is less than zero |
-| [`6-abs.c`]() | Write a function that computes the absolute value of an integer. Prototype: `int _abs(int)` |
+| [`6-abs.c`](https://github.com/Fwaitiruka7/alx-low_level_programming/blob/master/0x02-functions_nested_loops/6-abs.c) | Write a function that computes the absolute value of an integer. Prototype: `int _abs(int)` |
+| [`7-print_last_digit.c`](https://github.com/Fwaitiruka7/alx-low_level_programming/blob/master/0x02-functions_nested_loops/7-print_last_digit.c) | Write a function that prints the last digit of a number. |
+| [`8-24_hours.c`]() | Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59 |
