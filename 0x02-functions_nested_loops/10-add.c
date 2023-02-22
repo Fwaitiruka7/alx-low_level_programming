@@ -1,15 +1,11 @@
 #include "main.h"
 /**
  * add - sums up two integers
- *@a: number value one
- *@b: number value two
+ *@numb_1: number value one
+ *@numb_2: number value two
  *Return: 0
  */
-int add(int a, int b)
+int add(int numb_1, int numb_2)
 {
-	int x;
-
-	x = add(a,b);
-	_putchar(x);
-	return (0);
+	return(numb_1 + numb_2);
 }
