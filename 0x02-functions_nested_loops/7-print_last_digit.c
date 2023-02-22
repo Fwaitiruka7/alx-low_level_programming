@@ -14,7 +14,5 @@ int print_last_digit(int x)
 	if (rio < 0)
 		rio *= -1;
 	_putchar(rio + '0');
-
-	_putchar('\n');
 	return (rio);
 }
