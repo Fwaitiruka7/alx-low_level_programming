@@ -10,7 +10,7 @@ int print_last_digit(int x)
 {
 	int rio;
 
-	rio = x % 10;
+	rio = x % 100;
 	if (rio < 0)
 		rio *= -1;
 	_putchar(rio + '0');
