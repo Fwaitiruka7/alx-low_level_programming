@@ -9,10 +9,10 @@
 
 int _abs(int x)
 {
-	int r;
-
-	x = _abs(r);
-	_putchar(r);
+	if (x >= 0;)
+		return (x);
+	else
+		return (-);
 	_putchar('\n');
 	return (0);
 }
