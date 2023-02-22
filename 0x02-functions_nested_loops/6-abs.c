@@ -7,9 +7,11 @@
  * Return: Always (0)
  */
 
-int _abs(int r)
+int _abs(int x)
 {
-	r = _abs(r);
+	int r;
+
+	x = _abs(r);
 	_putchar(r);
 	_putchar('\n');
 	return (0);
