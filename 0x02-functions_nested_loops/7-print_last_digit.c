@@ -8,6 +8,8 @@
 
 int print_last_digit(int x)
 {
+	int rio;
+
 	rio = x % 10;
 	if (rio < 0)
 		rio *= -1;
