@@ -2,10 +2,8 @@
 
 /**
  *_abs - computes  the absolute value of an integer.
- *int_abs: prototype function for absolute
- * @int: the integer assigned value
  * @x: the integer used to find absolute
- * Return: Always (0)
+ * Return: returns absolute values
  */
 
 int _abs(int x)
