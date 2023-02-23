@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_line - function that draws a straight line
+ * print_diagonal - function that draws a straight line
  * @n:  number x the character \ should be printed
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
-	int m;
-	
+	int m, my_spc;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
@@ -16,7 +16,12 @@ void print_line(int n)
 	{
 		for (m = 1; m <= n; m++)
 		{
-			_putchar('\');
+			for (my_spc = 1; my_spc < m; my_spc++)
+			{
+				_putchar(' ');
+			}
+			_putchar(92);
+			_putchar('\n');
 		}
 		_putchar('\n');
 	}
