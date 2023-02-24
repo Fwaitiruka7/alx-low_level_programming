@@ -7,7 +7,7 @@
 
 void print_triangle(int size)
 {
-	int r, c, tri;
+	int r, my_sp, tri;
 
 	if (size <= 0)
 	{
@@ -17,11 +17,11 @@ void print_triangle(int size)
 	{
 		for (r = 0; r <= (size - 1); r++)
 		{
-			for (my_sp = 0; my_sp < (size - 1) - r; r++)
+			for (my_sp = 0; my_sp < (size - 1) - r; my_sp++)
 			{
 				_putchar(' ');
 			}
-			for (tri = 0; tr <= r; tr++)
+			for (tri = 0; tri <= r; tri++)
 			{
 				_putchar('#');
 			}
