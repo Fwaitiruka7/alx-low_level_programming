@@ -10,10 +10,10 @@ void rev_string(char *s)
 	int a, b;
 	int c = 0;
 
-	for (a = 0; s[a] != '\0'; a++)
+	while (a = 0; s[a] != '\0')
 	{
 		c++;
-		
+
 		for (b = (c - 1); b >= 0; b--)
 		{
 			_putchar(s[a]);
