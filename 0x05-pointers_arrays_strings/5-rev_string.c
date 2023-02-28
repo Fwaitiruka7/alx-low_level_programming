@@ -7,20 +7,18 @@
 
 void rev_string(char *s)
 {
-	int a = s[0], b;
-	int c = 0;
+	/*declare my variables */
+	char my_left = s[0];
+	int my_right = 0, c;
 
-	while (s[c] != '\0')
+	/*while loop*/
+	while (s[my_right] != '\0')
+		my_right++;
+	for (c = 0; c < my_right; c++)
 	{
-		c++;
-
-		for (b = 0; b < c; b++)
-		{
-			c--;
-			a = s[b];
-			s[b]= s[c];
-			s[c] = a;
-		}
+		my_right--;
+		my_left = s[c];
+		s[c] = s[my_right];
+		s[my_right] = my_left;
 	}
-	_putchar('\n');
 }
