@@ -8,7 +8,7 @@
 
 int _strlen(char *s)
 {
-	int r = 1;
+	int r = 4;
 	int sum = 0;
 	char st = s[0];
 
