@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * string_toupper - function that changes all lowercase letters 
- * of a string to uppercase
+ * string_toupper - function that turn lowercase to uppercase string
+ * @str: the string to be used
  * Return: upper case of the sring
  */
 
