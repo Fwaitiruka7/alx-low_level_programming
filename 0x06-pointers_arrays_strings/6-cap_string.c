@@ -12,7 +12,7 @@ char *cap_string(char *str)
 
 	for (o = 0; str[o] != '\0'; o++)
 	{
-		if ((o == 0 && str[o] == '.') || (str[o] != ' ' && str[o - 1] == ' '))
+		if ((o == 0 && str[o] == '\0') || (str[o] != ' ' && str[o - 1] == ' '))
 				{
 			if (str[o] >= 'a' && str[o] <= 'z')
 			{
