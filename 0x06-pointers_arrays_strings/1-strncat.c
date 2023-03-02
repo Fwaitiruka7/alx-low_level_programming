@@ -26,7 +26,8 @@ char *_strncat(char *dest, char *src, int n)
 			last = n;
 		}
 	}
-	return (dest);
+	_putchar(dest);
+	return (0);
 }
 
 
