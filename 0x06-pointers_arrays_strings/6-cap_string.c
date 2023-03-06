@@ -8,24 +8,15 @@
 
 char *cap_string(char *str)
 {
-	int o, sc;
-	int capitals = 32;
-	int seps[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' '};
+	int o;
 
 	for (o = 0; str[o] != '\0'; o++)
 	{
-		if (str[o] >= 'a' && str[o] <= 'z')
+		if ((o == 0 && str[o] == '.') || (str[o] != ' ' && str[o - 1] == ' '))
 		{
-			str[o] = (int)str[o] - capitals;
-		}
-		capitals = 0;
-
-		for (sc = 0; sc <= 12; sc++)
-		{
-			if (str[o] == seps[sc])
+			if (str[o] >= 'a' && str[o] <= 'z')
 			{
-				sc = 12;
-				capitals = 32;
+				str[o] = (int)str[o] - 32;
 			}
 		}
 	}
