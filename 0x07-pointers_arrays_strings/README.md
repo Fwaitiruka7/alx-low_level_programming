@@ -1,5 +1,6 @@
 ## `0x07-pointers_arrays_strings`
 | Author: Francis Waitiruka |
+| ---------------- |
 
 --------------------------------
 | Project | Description |
@@ -12,5 +13,5 @@
 | `7-print_chessboard.c` | Write a function that prints the chessboard |
 | `8-print_diagsums.c` | Write a function that prints the sum of the two diagonals of a square matrix of integers |
 --------------------------------
-
+| ----------- | 
 | ALX Software Engineering |
