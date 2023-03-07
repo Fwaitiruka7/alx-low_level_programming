@@ -11,6 +11,7 @@
 char *_strchr(char *s, char c)
 {
 	int x = 0;
+
 	if (!*s)
 	{
 		if (*s == c)
