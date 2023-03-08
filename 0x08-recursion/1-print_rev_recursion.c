@@ -7,25 +7,11 @@
 
 void _print_rev_recursion(char *s)
 {
-	int forwd = *s + 1;
-	int backwd = *s -1;
-	char cent;
-
-	/*base area*/
-	if (*s != '\0' || forwd > backwd)
+	/*variables *s, _print_rev_recursion, char f*/
+	if (*s)
 	{
-		_putchar('\n');
-	}
-	
-	/*recrusion reverse*/
-	else
-	{
-		cent = s[forwd];
-		s[forwd] = s[backwd];
-		s[backwd] = cent;
+		_print_rev_recursion(s + 1);
+		s++;
 		_putchar(*s);
 	}
-
-
-
 }
