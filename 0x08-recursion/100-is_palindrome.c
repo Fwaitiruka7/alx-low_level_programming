@@ -31,7 +31,7 @@ int is_palindrome(char *s)
 		{
 			sc++;
 			ec--;
-			is_palindrome(s);
+			is_palindrome(s + 1);
 		}
 	}
 	return (0);
