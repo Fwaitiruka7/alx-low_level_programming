@@ -34,4 +34,5 @@ int is_palindrome(char *s)
 			is_palindrome(s);
 		}
 	}
+	return (0);
 }
