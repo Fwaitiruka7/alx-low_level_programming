@@ -1,5 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
+/**
+ * main - prints it name followed by \n
+ * @argc: number of arguments passedm
+ * @argv: array of argc
+ * Return: 0
+ */
 
 int main(int argc, char *argv[])
 {
