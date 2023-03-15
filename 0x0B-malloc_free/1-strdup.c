@@ -40,5 +40,5 @@ char *_strdup(char *str)
 	}
 	free(array);
 	free(str);
-	free(i);
+	free((int *)i);
 }
