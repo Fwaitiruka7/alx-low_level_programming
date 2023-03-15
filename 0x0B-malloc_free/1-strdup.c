@@ -34,11 +34,10 @@ char *_strdup(char *str)
 			array[n] = str[n];
 		}
 
-		if (array == 0 || i == 0)
+		if (array == 0)
 			return (NULL);
 		return (array);
 	}
 	free(array);
 	free(str);
-	free((int *)i);
 }
