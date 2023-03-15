@@ -13,7 +13,8 @@
 char *_strdup(char *str)
 {
 	char *array;
-	unsigned int i, n;
+	unsigned i;
+	int n;
 
 	if (str == 0)
 	{
