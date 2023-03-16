@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 	}
 
 	for (x = 0; x < height; x++)
-	{
+	{lloc_grid.c
 		if (shape == NULL)
 		{
 			free(shape);
@@ -45,6 +45,5 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (shape);
-	free(shape);
 }
 
