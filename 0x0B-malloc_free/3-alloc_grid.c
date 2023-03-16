@@ -18,7 +18,6 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 	{
-		free(shape);
 		return (NULL);
 	}
 
@@ -34,6 +33,7 @@ int **alloc_grid(int width, int height)
 	{
 		if (shape == NULL)
 		{
+			free(shape);
 			return (NULL);
 		}
 
