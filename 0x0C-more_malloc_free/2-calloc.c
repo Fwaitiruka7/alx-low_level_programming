@@ -24,9 +24,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		array = malloc(sizeof(int) * size);
 
-		for (i = 0; i < (int)size; i++)
+		for (i = 0; i < (nmemb * size); i++)
 		{
-			array[i] = i * 2 + 1;
+			array[i] = 0;
 
 		}
 		if (array == 0)
@@ -35,5 +35,4 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		}
 	}
 	return (array);
-	free(array);
 }
