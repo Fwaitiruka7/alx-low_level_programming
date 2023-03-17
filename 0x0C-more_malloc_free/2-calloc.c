@@ -12,8 +12,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
-	int *array;
+	void *array;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -22,16 +21,16 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	else
 	{
-		array = malloc(sizeof(int) * size);
+		array = malloc(nmemb * size);
 
-		for (i = 0; i < (nmemb * size); i++)
-		{
-			array[i] = 0;
-
-		}
 		if (array == 0)
 		{
-			return (NULL);
+			return (0);
+		}
+
+		else
+		{
+			memset(array, 0, nmemb * size);
 		}
 	}
 	return (array);
