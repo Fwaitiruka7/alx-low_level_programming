@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * calloc - allocates memory for an array
+ * _calloc - allocates memory for an array
  * @nmemb: array to be used
  * @size: the total allocated space
  * Return: if nmemb or size is 0 return null & NULL if its fail
@@ -29,7 +29,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 			array[i] = i * 2 + 1;
 
 		}
-		
 		if (array == 0)
 		{
 			return (NULL);
