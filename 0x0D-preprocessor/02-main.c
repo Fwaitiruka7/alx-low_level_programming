@@ -1,9 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main()
+/**
+ * main - prints source file name
+ * Return: Nothing
+ */
+
+int main(void)
 {
-	printf( __FILE__);
+	printf(__FILE__);
 	printf("\n");
 	return (0);
 }
