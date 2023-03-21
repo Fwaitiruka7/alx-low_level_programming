@@ -11,4 +11,9 @@
 | `0x06-pointers_arrays_strings` |
 | `0x07-pointers_arrays_strings` |
 | `0x08-recursion` |
+| `alx-low_level_programming` |
+| `0x0B-malloc_free` |
+| `0x0C-more_malloc_free` |
+| `0x0D-preprocessor` |
+| `0x0E-structures_typedef` |
 
