@@ -1,30 +1,21 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include <stddef.h>
 #include "variadic_functions.h"
 /**
  * print_all - prints anything
  * @format: list of types of aruments passed to the func
- * @c: char
- * @i: int
- * @f: float
- * @s: char *
+ * c: char, i: int, f: float, s: char *
  */
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int num_list, n, i;
-	char c, *s;
-	float f;
+	int num_list, n, i, char c, *s, float f;
 
 	va_start(ap, format);
-
 	while (format[n] != '\0')
 	{
 		num_list++, n++;
-
 	} n = 0;
-
 	while (format[n] != '\0' && num_list > 0)
 	{
 		switch (format[n])
@@ -47,9 +38,7 @@ void print_all(const char * const format, ...)
 				{
 					printf("nil");
 				}
-				else
-				{
-					printf("%s, ", s);
+				printf("%s, ", s);
 				} break;
 			default:
 				break;
