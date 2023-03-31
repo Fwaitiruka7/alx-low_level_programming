@@ -10,4 +10,4 @@ xor rax, rax
 call printf
 mov eax,0
 xor eax, eax
-ret 
+ret
