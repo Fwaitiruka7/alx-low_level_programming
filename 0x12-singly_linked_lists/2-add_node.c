@@ -14,12 +14,11 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	size_t n = 0;
 	list_t *new_node;
 
-	if (str == NULL)
+	if (str == NULL || head == NULL)
 	{
-		printf("NULL");
+		return (NULL);
 	}
 	else
 	{
@@ -30,11 +29,11 @@ list_t *add_node(list_t **head, const char *str)
 			new_node->len = strlen(str);
 			new_node->next = *head;
 			*head = new_node;
-			n++;
 		}
 		else
 		{
-			printf("NULL");
+			free(new_node);
+			return (NULL);
 		}
 	}
 	return (new_node);
