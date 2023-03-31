@@ -24,8 +24,8 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%u] (%s)\n", cur->len, cur->str);
 		}
-		n++;
 		cur = cur->next;
+		n++;
 	}
 	return (n);
 }
