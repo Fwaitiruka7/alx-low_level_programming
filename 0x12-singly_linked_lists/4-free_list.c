@@ -13,6 +13,7 @@ void free_list(list_t *head)
 {
 	list_t *tmp;
 	list_t *next;
+
 	tmp = head;
 
 	if (tmp != NULL)
