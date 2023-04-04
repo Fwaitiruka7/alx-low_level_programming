@@ -20,10 +20,11 @@ int pop_listint(listint_t **head)
 
 	num = (*head)->n;
 
-	tmp = malloc(sizeof(listint_t));
-
-	tmp = *head;
-	*head = (*head)->next;
-	free(tmp);
+	while (*head != NULL)
+	{
+		tmp = *head;
+		*head = (*head)->next;
+		free(tmp);
+	}
 	return (num);
 }
