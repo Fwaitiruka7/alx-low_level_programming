@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * print_listint_len - print the number of nodes
+ * listint_len - print the number of nodes
  * listint_t - struct node
  * @h: head
  * Return: number of nodes
