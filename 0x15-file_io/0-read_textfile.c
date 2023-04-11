@@ -13,7 +13,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fp = fopen(filename, "r");
+	FILE *fp = fopen(filename, "r+");
 	char *buffer = (char *) malloc(sizeof(char) * letters);
 	size_t read_fl = fread(buffer, sizeof(char), letters, fp);
 	ssize_t write_fl = write(STDOUT_FILENO, buffer, read_fl);
