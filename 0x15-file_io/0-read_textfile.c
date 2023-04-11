@@ -13,7 +13,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fp = fopen(filename, "r+");
+	FILE *fp = fopen(filename, "r");
 	char *buffer = (char *) malloc(sizeof(char) * letters);
 	size_t read_fl = fread(buffer, sizeof(char), letters, fp);
 	ssize_t write_fl = write(STDOUT_FILENO, buffer, read_fl);
@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	if (write_fl == -1 || (unsigned long int) write_fl != (size_t) read_fl)
+	if (write_fl == -1 || write_fl != (ssize_t) read_fl)
 	{
 		free(buffer);
 		fclose(fp);
@@ -49,5 +49,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	free(buffer);
 	fclose(fp);
-	return ((size_t) read_fl);
+	return (read_fl);
 }
