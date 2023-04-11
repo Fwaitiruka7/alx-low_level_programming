@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -13,23 +14,28 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	FILE *file = fopen(filename, "w+");
+	int file = open(filename, O_CREAT | O_TRUNC | O_WRONLY, S_IRUSR | S_IWUSR);
+	int count = strlen(text_content), str;
 
 	if (filename == NULL)
 	{
 		return (-1);
 	}
 
-	if (file == NULL)
+	if (file == -1)
 	{
 		return (-1);
 	}
 
-	if (text_content == NULL)
+	if (text_content != NULL)
 	{
-		fputs(text_content, file);
+		str = write(file, text_content, count);
+		if (str == -1)
+		{
+			return (-1);
+		}
 	}
 
-	fclose(file);
+	close(file);
 	return (1);
 }
