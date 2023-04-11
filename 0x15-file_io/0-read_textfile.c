@@ -18,16 +18,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	size_t read_fl = fread(buffer, sizeof(char), letters, fp);
 	ssize_t write_fl = write(STDOUT_FILENO, buffer, read_fl);
 
-	if (filename == NULL)
+	if (*filename == NULL)
 	{
 		return (0);
 	}
-	if (fp == NULL)
+	if (*fp == NULL)
 	{
 		return (0);
 	}
 
-	if (buffer == NULL)
+	if (*buffer == NULL)
 	{
 		fclose(fp);
 		return (0);
